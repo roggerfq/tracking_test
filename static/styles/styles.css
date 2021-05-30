@@ -1,0 +1,10 @@
+
+body {
+  background-color: lightblue;
+}
+
+
+canvas {
+    cursor: crosshair;
+    border: 1px solid #000000;
+}

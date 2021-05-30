@@ -1,0 +1,26 @@
+<-- index.html -->
+<html>
+  <head>
+    <title>Video Streaming Demonstration</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+    <h1>IMage of reference</h1>
+     <canvas width="800" height="800"></canvas>
+
+     <button onclick="resetState()">Reset</button>
+     <form action="">
+           <label for="fname" style="color:green"><b>u (m):</b></label><br>
+           <input type="text" id="u" name="fname" value=""><br>
+           <label for="lname" style="color:red"><b>v (m):</b></label><br>
+           <input type="text" id="v" name="lname" value=""><br><br>
+           <input type="submit" value="Submit" id="mysubmit">
+     </form> 
+
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+  </body>
+</html>
